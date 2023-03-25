@@ -52,7 +52,7 @@ module.exports = (_ => {
 			return template.content.firstElementChild;
 		}
 	} : (([Plugin, BDFDB]) => {
-		return class BetterNsfwTag extends Plugin {
+		return class BetterForumTag extends Plugin {
 			onLoad () {
 				this.modulePatches = {
 					before: [
@@ -61,10 +61,10 @@ module.exports = (_ => {
 				};
 				
 				this.css = `
-					${BDFDB.dotCN._betternsfwtagtag} {
+					${BDFDB.dotCN._betternforumtagtag} {
 						margin-left: 2px;
 					}
-					${BDFDB.dotCN.channelcontainerdefault}:hover ${BDFDB.dotCN.channeliconitem} ~ ${BDFDB.dotCN._betternsfwtagtag} {
+					${BDFDB.dotCN.channelcontainerdefault}:hover ${BDFDB.dotCN.channeliconitem} ~ ${BDFDB.dotCN._betternforumtagtag} {
 						display: none;
 					}
 				`;
@@ -81,7 +81,7 @@ module.exports = (_ => {
 			processChannelItem (e) {
 				if (e.instance.props.channel && (e.instance.props.channel.type == 15) && !BDFDB.ReactUtils.findChild(e.instance.props.children, {key: "FORUM_TAG"})) e.instance.props.children.push(BDFDB.ReactUtils.createElement("div", {
 					key: "FORUM_TAG",
-					className: BDFDB.disCNS._betternsfwtagtag + BDFDB.disCN.channelchildiconbase,
+					className: BDFDB.disCNS._betternforumtagtag + BDFDB.disCN.channelchildiconbase,
 					children: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Badges.TextBadge, {
 						style: {borderRadius: "3px"},
                         color: "var(--bdfdb-blurple)",
