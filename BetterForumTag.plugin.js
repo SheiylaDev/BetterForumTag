@@ -84,7 +84,7 @@ module.exports = (_ => {
 					className: BDFDB.disCNS._betternsfwtagtag + BDFDB.disCN.channelchildiconbase,
 					children: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Badges.TextBadge, {
 						style: {borderRadius: "3px"},
-                        color: "var(--bdfdb-blurple)",
+                        color: "#206694",
 						text: "FORUM"
 					})
 				}));
