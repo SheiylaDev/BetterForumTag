@@ -5,7 +5,7 @@
  * @version 1.0.1
  * @description Adds a more noticeable Tag to Forum Channels
  * @source https://github.com/SheiylaDev/BetterForumTag/
- * @updateUrl https://github.com/SheiylaDev/BetterForumTag/BetterNsfwTag.plugin.js
+ * @updateUrl https://github.com/SheiylaDev/BetterForumTag/blob/main/BetterForumTag.plugin.js
  */
 
 module.exports = (_ => {
